@@ -7,3 +7,44 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
+
+
+/****** TOP CONTENT ******/
+#top{
+    height: calc(100vh - 75px);
+    background-color: blue;
+}
+
+.top-content {
+    display: flex;
+    background-color: green;
+    height: 100%;
+}
+
+
+
+/****** BOTTOM CONTENT ******/
+#bottom{
+    height: 75px;
+    background-color: gray;
+}
+
+
+
+/****** SIDEBAR ******/
+#sidebar{
+    width: 200px;
+    background-color: purple;
+}
+
+
+
+/****** MAIN ******/
+.content{
+    width: calc(100vw - 200px);
+    background-color: red;
+}
+
+
+
+/****** FOOTER ******/
