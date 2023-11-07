@@ -33,18 +33,115 @@ body{
 
 /****** SIDEBAR ******/
 #sidebar{
-    width: 200px;
+    width: 50px;
     background-color: purple;
 }
 
 
 
+/****** HEADER ******/
+header{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 75px;
+    width: 100%;
+}
+
+
 /****** MAIN ******/
-.content{
-    width: calc(100vw - 200px);
+#content{
+    width: calc(100vw - 50px);
     background-color: red;
+    overflow-y: auto;
+}
+
+.main-content{
+    margin-top: 80px;
+}
+
+.container{
+    width: 100%;
+    text-align: start;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* SECTION LIST */
+.col-list{
+    width: 100%;
+    background-color: aliceblue;
+    height: 50px;
+    margin: 10px;
+}
+
+
+/* SECTION RECENTLY PLAYED */
+.col {
+    width: calc(100% / 2 - 20px);
+    margin: 10px;
+    background-color: gold;
+    height: 150px;
+}
+
+h1 {
+    background-color: aqua;
+    height: 75px;
+    width: 100%;
+    margin: 20px 0 10px 0;
+}
+
+
+/* SECTION JOHN DOE */
+p {
+    background-color: black;
+    height: 30px;
+    width: 100%;
+    margin: 5px 0 20px 0;
+}
+
+
+/* SECTION MOST POPULAR */
+.col-circle {
+    border-radius: 100%;
 }
 
 
 
 /****** FOOTER ******/
+
+
+
+
+/****** MEDIA QUERY SIDEBAR ******/
+@media screen and (min-width: 530px) {
+    #sidebar {
+        width: 200px;
+        background-color: purple;
+    }
+}
+
+
+/****** MEDIA QUERY TABLET ******/
+@media screen and (min-width: 750px){
+    .col {
+        width: calc(100% / 4 - 20px);
+        margin: 10px;
+        background-color: gold;
+        height: 150px;
+    }
+}
+
+
+/****** MEDIA QUERY DESKTOP ******/
+@media screen and (min-width: 1100px){
+    .col {
+        width: calc(100% / 6 - 20px);
+        margin: 10px;
+        background-color: gold;
+        height: 150px;
+    }
+
+}
