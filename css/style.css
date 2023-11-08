@@ -12,12 +12,10 @@ body{
 /****** TOP CONTENT ******/
 #top{
     height: calc(100vh - 75px);
-    background-color: blue;
 }
 
 .top-content {
     display: flex;
-    background-color: green;
     height: 100%;
 }
 
@@ -34,9 +32,68 @@ body{
 /****** SIDEBAR ******/
 #sidebar{
     width: 50px;
-    background-color: purple;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
 }
 
+.svg-sidebar{
+    width: 100%;
+    padding: 7px;
+}
+
+.sidebar-profile{
+    background-color: gray;
+    border-radius: 100%;
+}
+
+.show{
+    display: block;
+}
+
+.hidden{
+    display: none;
+}
+
+.fa-plus{
+    background-color: gray;
+    padding: 5px;
+    color: black;
+    font-size: 35px;
+    margin: 10px;
+}
+
+.content-sidebar-playlist{
+    color: #717171;
+}
+
+h4{
+    color: white;
+    padding: 20px 10px 0px;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    padding: 10px;
+}
+
+.playlist-list{
+    overflow-y: auto;
+    height: 30vh;
+}
+
+hr{
+    background-color: #717171;
+    border: none;
+    height: 2px;
+    margin: 3px 15px 15px;
+}
 
 
 /****** HEADER ******/
@@ -44,14 +101,24 @@ header{
     position: fixed;
     background-color: rgba(0, 0, 0, 0.5);
     height: 75px;
-    width: 100%;
+    width: calc(100vw - 50px);
+    text-align: right;
+}
+
+button{
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 30px;
+    color: white;
+    padding: 10px;
+    margin: 15px 10px;
 }
 
 
 /****** MAIN ******/
 #content{
     width: calc(100vw - 50px);
-    background-color: red;
+    background-color: #171d27;
     overflow-y: auto;
 }
 
@@ -116,11 +183,61 @@ p {
 
 
 /****** MEDIA QUERY SIDEBAR ******/
-@media screen and (min-width: 530px) {
+@media screen and (min-width: 550px) {
     #sidebar {
         width: 200px;
-        background-color: purple;
     }
+
+    #content {
+        width: calc(100vw - 200px);
+    }
+    
+    .show{
+        display: none;
+    }
+
+    .hidden{
+        display: block;
+    }
+
+    span{
+        color: #717171;
+        margin: 5px;
+        position: relative;
+        top: -10px;
+    }
+
+    .span-bottom{
+        top: -15px
+    }
+
+    .span-john{
+        color: white;
+    }
+
+    .svg-sidebar{
+        width: 20%;
+        padding: 0;
+        fill: #717171;
+    }
+
+    .logo{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .li-top{
+        padding: 1px 10px;
+    }
+
+    .li-top:first-child{
+        margin-top: 10px;
+    }
+
+    header{
+        width: calc(100vw - 200px);
+    }
+    
 }
 
 
