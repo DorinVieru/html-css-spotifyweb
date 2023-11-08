@@ -81,6 +81,7 @@ ul{
 
 li{
     padding: 10px;
+    display: inline-block;
 }
 
 .playlist-list{
@@ -140,9 +141,16 @@ button{
 /* SECTION LIST */
 .col-list{
     width: 100%;
-    background-color: aliceblue;
     height: 50px;
+    color: #717171;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
     margin: 10px;
+}
+
+.li-menu{
+    border-bottom: 3px solid #ADFF2F;
 }
 
 
@@ -155,10 +163,9 @@ button{
 }
 
 h1 {
-    background-color: aqua;
-    height: 75px;
+    color: white;
     width: 100%;
-    margin: 20px 0 10px 0;
+    margin: 30px 0 10px 0;
 }
 
 
