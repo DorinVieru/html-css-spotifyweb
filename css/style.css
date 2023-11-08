@@ -105,6 +105,7 @@ header{
     height: 75px;
     width: calc(100vw - 50px);
     text-align: right;
+    z-index: 1;
 }
 
 button{
@@ -212,10 +213,9 @@ h6{
 
 /* SECTION JOHN DOE */
 p {
-    background-color: black;
-    height: 30px;
+    color: #717171;
     width: 100%;
-    margin: 5px 0 20px 0;
+    margin: 5px 10px 20px;
 }
 
 
