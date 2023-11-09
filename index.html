@@ -11,7 +11,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>Spotify</title>
-</head>
+</head><link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 <body>
     <!------- TOP CONTENT ------->
     <div id="top">
@@ -29,14 +29,14 @@
                     <div class="content-sidebar-top hidden">
                         <img class="svg-sidebar logo hidden" src="./img/logo.svg" alt="logo">
                         <ul>
-                            <li class="li-top"><img class="svg-sidebar" src="./img/home.svg" alt="home"> <span>Home</span></li>
-                            <li class="li-top"><img class="svg-sidebar" src="./img/search.svg" alt="search"> <span>Cerca</span></li>
-                            <li class="li-top"><img class="svg-sidebar" src="./img/libreria.svg" alt="libreria"> <span> La tua libreria</span></li>
+                            <li class="li-top"><img class="svg-sidebar" src="./img/home.svg" alt="home"> <span class="text-sidebar">Home</span></li>
+                            <li class="li-top"><img class="svg-sidebar" src="./img/search.svg" alt="search"> <span class="text-sidebar">Cerca</span></li>
+                            <li class="li-top"><img class="svg-sidebar" src="./img/libreria.svg" alt="libreria"> <span class="text-sidebar"> La tua libreria</span></li>
                         </ul>
                     </div>
                     <div class="content-sidebar-playlist hidden">
                         <h4>PLAYLIST</h4>
-                        <i class="fa-solid fa-plus"></i> <span>Crea Playlist</span>
+                        <i class="fa-solid fa-plus"></i> <span class="text-sidebar">Crea Playlist</span>
                         <div class="playlist-list">
                             <ul>
                                 <li>Nome Playlist</li>
@@ -55,10 +55,10 @@
                     <img class="svg-sidebar sidebar-profile" src="./img/profile.svg" alt="prfile">
                 </div>
                 <div class="bottom-sidebar hidden">
-                    <img class="svg-sidebar" src="./img/download.svg" alt="download"> <span class="span-bottom">Installa app</span>
+                    <img class="svg-sidebar" src="./img/download.svg" alt="download"> <span class="span-bottom text-sidebar">Installa app</span>
                     <hr>
                     <img class="svg-sidebar sidebar-profile" src="./img/profile.svg" alt="prfile">
-                    <span class="span-bottom span-john">John Doe</span>
+                    <span class="span-bottom span-john text-sidebar">John Doe</span>
                 </div>
             </div>
             <div id="content">
@@ -204,7 +204,35 @@
 
         <!------- FOOTER ------->
         <footer>
+           <div class="container-footer">
+            <div class="row-footer">
+                <div class="col-10">
+                    <div class="album-footer">
+                        <img src="./img/player_left.jpg" alt="player">
+                    </div>
+                </div>
+                <div class="col-10">
+                    <p class="p-footer">Sinister</p>
+                    <h6>Brano</h6>
+                    <h6 class="h6-footer">Nome</h6>
+                </div>
+                <div class="col-10 col-icon">
+                    <p class="p-icon"><i class="fa-regular fa-heart"></i></p>
+                    <p class="p-icon"><i class="fa-regular fa-folder"></i></p>
+                </div>
+                <div class="col-40">
 
+                </div>
+                <div class="col-10">
+                    <i class="fa-solid fa-list icon-footer"></i>
+                    <i class="fa-solid fa-desktop icon-footer"></i>
+                </div>
+                <div class="col-20">
+                    <i class="fa-solid fa-volume-high icon-footer"></i>
+                    <span><hr class="hr-footer"></span>
+                </div>
+            </div>
+           </div> 
         </footer>
     </div>
 </body>
