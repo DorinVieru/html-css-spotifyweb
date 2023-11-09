@@ -76,12 +76,12 @@
                                 <!-- SECTION LIST -->
                                 <div class="col-list">
                                     <ul>
-                                        <li class="li-menu">IN EVIDENZA</li>
-                                        <li>PODCAST</li>
-                                        <li>CLASSIFICHE</li>
-                                        <li>GENERI E MOD</li>
-                                        <li>NUOVE USCITE</li>
-                                        <li>SCOPRI</li>
+                                        <li class="list-menu li-menu">IN EVIDENZA</li>
+                                        <li class="list-menu">PODCAST</li>
+                                        <li class="list-menu">CLASSIFICHE</li>
+                                        <li class="list-menu">GENERI E MOD</li>
+                                        <li class="list-menu">NUOVE USCITE</li>
+                                        <li class="list-menu">SCOPRI</li>
                                     </ul>
                                 </div>
 
@@ -206,7 +206,7 @@
         <footer>
            <div class="container-footer">
             <div class="row-footer">
-                <div class="col-10">
+                <div class="col-10 col-album">
                     <div class="album-footer">
                         <img src="./img/player_left.jpg" alt="player">
                     </div>
@@ -246,7 +246,11 @@
                 </div>
                 <div class="col-20 col-end-footer">
                     <i class="fa-solid fa-volume-high icon-footer"></i>
-                    <span><hr class="hr-footer"></span>
+                    <div class="player-bar volume">
+                        <div class="elapsed-time volume-elapsed">
+                            <div class="controller-elasped-point volume-controller"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
            </div> 
